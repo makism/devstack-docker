@@ -1,0 +1,8 @@
+version: "3"
+services:
+    app:
+        image: fastapi_app
+        volumes:
+        - .:/code
+        ports:
+        - "80:80"
