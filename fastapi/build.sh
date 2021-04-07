@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-docker build -t fastapi_app .
+docker build \
+    -f fastapi.Dockerfile \
+    -t fastapi_app .
