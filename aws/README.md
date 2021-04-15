@@ -42,3 +42,5 @@ To update `aws-cli v2`, append `--update` when installing.
 # Links
 
 * https://medium.com/@meetakoti.kirankumar/deploying-fastapi-web-application-in-aws-a1995675087d
+
+* https://reflectoring.io/aws-deploy-docker-image-via-web-console/
