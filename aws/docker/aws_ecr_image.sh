@@ -14,7 +14,7 @@ DOCKER_IMAGE=fastapi:latest
 /opt/bin/aws ecr get-login-password  --region $AWS_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com
 
 # Create repository
-aws ecr create-repository --repository-name $REPO_NAME --region $AWS_REGION
+/opt/bin/aws ecr create-repository --repository-name $REPO_NAME --region $AWS_REGION
 
 # Tag your image so you can push the image to this repository
 docker tag $DOCKER_IMAGE $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$REPO_NAME
