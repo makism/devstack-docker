@@ -6,6 +6,7 @@ RUN mkdir -p ${shared_workspace}
 
 RUN apt-get update -y && \
     apt-get install -y python3 && \
+    apt-get install -y libpq-dev && \    
     ln -s /usr/bin/python3 /usr/bin/python && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 

@@ -8,3 +8,7 @@ tqdm
 networkx
 statsmodels
 sqlalchemy
+psycopg2
+redshift-sqlalchemy
+sqlparse
+pyhive[hive]
