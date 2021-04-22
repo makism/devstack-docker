@@ -18,6 +18,7 @@ RUN wget https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk/1.7.4/aws-jav
 
 # Copy template notebooks
 ADD ["notebooks/Template Spark AWS.ipynb", "/opt/workspace/Template Spark AWS.ipynb"]
+ADD ["notebooks/Template SQLAlchemy.ipynb", "/opt/workspace/Template SQLAlchemy.ipynb"]
 
 EXPOSE 8888
 WORKDIR ${SHARED_WORKSPACE}
